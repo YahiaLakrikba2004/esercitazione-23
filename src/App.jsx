@@ -1,9 +1,9 @@
 
-import AllTheBooks from './AllTheBooks';
+import AllTheBooks from './AllBooksComponent';
 import './App.css';
-import MyFooter from './components/MyFooter';
-import MyNav from './components/MyNav';
-import Welcome from './components/WelcomeComponent';
+import MyFooter from './components/FooterComponent';
+import MyNav from './components/NavbarComponent';
+import Welcome from './components/AlertComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
