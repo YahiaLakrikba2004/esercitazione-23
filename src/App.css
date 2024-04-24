@@ -69,3 +69,17 @@
   font-weight: 700;
   text-align: center;
 }
+
+.PNAV {
+  margin-bottom: 0px;
+}
+.NavSearch {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.NavSearch.active {
+  opacity: 1;
+  transform: scale(1);
+}
