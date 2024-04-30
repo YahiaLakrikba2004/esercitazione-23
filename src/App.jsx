@@ -1,26 +1,26 @@
-import React from 'react';
-import './App.css';
-import MyFooter from './components/FooterComponent';
-import MyNav from './components/NavbarComponent';
-import Welcome from './components/AlertComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import MyNav from './components/MyNav';
+import MyFooter from './components/MyFooter';
+import AlertComponent from './components/Welcome';
+import { Container } from 'react-bootstrap';
+import BookList from './components/BookList';
+import CommentList from './components/CommentList';// Importa CommentArea
 
-import AllTheBooks from './components/AllBooksComponent';
-
+import booksData from './books.json';
 
 function App() {
   return (
-    <div className="App">
-      <MyNav/>
-      <div className="search-bar-container">
-        
-      </div>
-      <header className="App-header">
-        <Welcome/>
-        <AllTheBooks/>
-      </header>
-      <MyFooter/>
-    </div>
+    <>
+      <MyNav />
+      <Container>
+        <AlertComponent/>
+        <BookList books={booksData} />
+      </Container>
+      <MyFooter />
+      <CommentList/>
+
+    </>
   );
 }
 
